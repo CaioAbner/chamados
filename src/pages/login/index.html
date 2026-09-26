@@ -24,7 +24,7 @@
       <h2>Logo aqui</h2>
       <nav id="login-navigation">
         <p style="color: #6a7e90; font-weight: 450">Ainda não tem acesso?</p>
-        <a href="#">Solicitar acesso</a>
+        <a href="#" style="font-weight: 600">Solicitar acesso</a>
       </nav>
     </header>
 
@@ -52,7 +52,88 @@
         </p>
       </div>
 
-      <div id="login-form-container"></div>
+      <div id="login-form-content">
+        <form id="login-form">
+          <div id="form-presentation" style="align-self: flex-start">
+            <h2 style="font-weight: 550; color: #161e36">
+              Entrar na sua conta
+            </h2>
+            <p style="font-weight: 400; color: #6a7e90cb">
+              Use seu e-mail corporativo para continuar.
+            </p>
+          </div>
+
+          <div id="inputs-form-container">
+            <div
+              id="email-input-container"
+              style="display: flex; flex-direction: column"
+            >
+              <label for="email" style="font-weight: 600; color: #565555"
+                >E-mail</label
+              >
+              <input
+                placeholder="seuemail@fae.com.br"
+                type="email"
+                name="email"
+                id="input-email"
+              />
+            </div>
+
+            <div
+              id="senha-input-container"
+              style="display: flex; flex-direction: column"
+            >
+              <div
+                id="pass-info"
+                style="display: flex; justify-content: space-between"
+              >
+                <label for="senha" style="font-weight: 600; color: #565555"
+                  >Senha</label
+                >
+                <a
+                  href="#"
+                  style="text-decoration: none; font-weight: 600; outline: none"
+                  tabindex="-1"
+                  >Esqueceu a senha?</a
+                >
+              </div>
+              <input
+                placeholder="Digite sua senha"
+                type="password"
+                name="senha"
+                id="input-senha"
+              />
+              <p
+                id="keepConnected"
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-top: 3%;
+                  color: #565555e0;
+                  font-weight: 500;
+                  gap: 0.5rem;
+                "
+              >
+                <input type="checkbox" name="connected" id="CbxKeepConnected" />
+                Manter conectado
+              </p>
+            </div>
+          </div>
+
+          <div id="login-btn-container">
+            <button id="btn-login" style="outline: none">Entrar</button>
+          </div>
+
+          <div id="first-access" style="margin-top: 20px">
+            <p style="color: #565555e0; font-weight: 500">
+              Primeiro acesso?
+              <a href="#" style="text-decoration: none; font-weight: 600"
+                >Solicite acesso</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
