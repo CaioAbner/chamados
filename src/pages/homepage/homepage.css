@@ -6,7 +6,9 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
   background-color: #f5f6fa;
 }
 
@@ -50,7 +52,8 @@ body {
     transition: 0.3s ease-in-out;
   }
 
-  & a:focus {
+  & a:hover,
+  a:focus {
     background-color: #eaf0ff;
     font-weight: bold;
     color: #2752c3;
@@ -84,4 +87,118 @@ body {
 
 #username {
   color: #787878;
+}
+
+/* Parte da "apresentação" do site - container global dessa parte */
+
+#presentation-helpdesk {
+  display: flex;
+  justify-content: space-between;
+  width: 79%;
+
+  font-family: "Poppins";
+}
+
+/* Container do "título da seção" */
+
+#presentation-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Container do botão de abrir chamado */
+
+#open-support-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 15%;
+}
+
+/* Botão de abrir chamado */
+
+#open-support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  font-weight: bolder;
+  color: #fff;
+  background-color: #2563ea;
+
+  /* Ícone do botão de abrir chamado */
+
+  i {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+}
+
+/* COntainer que engloba os cards com os dados de métricas que são feitos com base nos chamados */
+
+#information-support-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  height: 10vh;
+
+  font-family: "Poppins";
+}
+
+/* O design do card de métrica em si */
+
+.information_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 24%;
+  height: 100%;
+  padding: 1.5rem;
+
+  border-radius: 0.8rem;
+  border: 1px solid #dbdbdb96;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #f2f3f6;
+}
+
+/* Essa parte é para os dados numérios (ex: chamados conluídos = 8 etc..) */
+
+.information_data_metrics {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+
+  p {
+    color: #787878;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+#support-presentation-container {
+  height: auto;
+  width: 80%;
+}
+
+#filters-container {
+  height: 8vh;
+  width: 100%;
+
+  background-color: gray;
 }

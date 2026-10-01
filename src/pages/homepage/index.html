@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="stylesheet" href="./homepage.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
     <title>Chamados</title>
   </head>
   <body>
@@ -21,5 +33,101 @@
         <p id="username">Caio Abner</p>
       </div>
     </header>
+
+    <section id="presentation-helpdesk">
+      <div id="presentation-title-container">
+        <p style="color: #787878">Área de atendimento</p>
+        <h1 style="color: #161e36">Meus chamados</h1>
+        <p style="font-size: 1.1rem; color: #787878">
+          Acompanhe solicitações e atualizações recentes.
+        </p>
+      </div>
+
+      <div id="open-support-container">
+        <button id="open-support">
+          <i class="bx bx-plus"></i>Abrir chamado
+        </button>
+      </div>
+    </section>
+
+    <section id="information-support-data">
+      <div class="information_card">
+        <p style="color: #494949">Chamados Aberto</p>
+        <span
+          id="in-process"
+          style="color: #161e36"
+          class="information_data_metrics"
+        >
+          08
+          <p>em andamento</p>
+        </span>
+      </div>
+
+      <div class="information_card">
+        <p style="color: #494949">Aguardando resposta</p>
+        <span
+          id="to-do"
+          style="color: #161e36"
+          class="information_data_metrics"
+        >
+          03
+          <p>precisam de você</p>
+        </span>
+      </div>
+
+      <div class="information_card">
+        <p style="color: #494949">Concluídos este mês</p>
+        <span
+          id="finished-supports"
+          style="color: #161e36"
+          class="information_data_metrics"
+        >
+          12
+          <p>desde 1 de setembro</p>
+        </span>
+      </div>
+
+      <div class="information_card">
+        <p style="color: #494949">Tempo médio</p>
+        <span
+          id="resolved-days"
+          style="color: #161e36"
+          class="information_data_metrics"
+        >
+          1,8
+          <p>dias para resolver</p>
+        </span>
+      </div>
+    </section>
+
+    <main id="support-presentation-container">
+      <section id="filters-container">
+        <div id="search-container">
+          <button name="searchSupport">
+            <i class="bx bx-search-big"></i>
+          </button>
+          <input type="search" name="searchSupport" id="input-search-support" />
+        </div>
+
+        <div id="status-container">
+          <label for="supportType">Status: </label>
+          <select name="supportType" id="select-support-type">
+            <option value="todos" selected>Todos</option>
+            <option value="abertos">Abertos</option>
+            <option value="emAndamento">Em andamento</option>
+            <option value="concluidos">Concluídos</option>
+            <option value="fechado">Fechado</option>
+            <option value="aguardandoAprovacao">Aguardando aprovação</option>
+          </select>
+        </div>
+
+        <div id="support-date-container">
+          <select name="supportDate" id="select-support-date">
+            <option value="todos" selected>Mais recentes</option>
+            <option value="abertos">Mais antigos</option>
+          </select>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
